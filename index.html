@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
     <title>Smart Media</title>
-    <?php require("./head.php")?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="icon" type="image/x-icon" href="./img/smart.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body >
     <div id="top"></div>
@@ -14,7 +25,100 @@
             <header></header>
             <div class="corner"><div class="cornerimg"></div></div>
             <nav>
-                <?php require("./nav.php")?>
+                <div class="navbar" id="navbar">
+            <div class="navmob">
+                <span onclick="openNav()">&#9776;</span>
+                <div id="navmobclo" onclick="closeNav()"></div>
+            </div>
+            <div class="logo"> 
+                <!-- <img src="./img/logo.png" alt="I Smart Media"> -->
+                <div class="logoimg"></div>
+            </div>
+    
+            <div  id="mobSidenav" >
+                 <ul class="navmanus">
+                    <li><h2><a href="/smart/">Home</a></h2></li>
+                    <li><h2><a href="/smart/about.php">About</a></h2></li>
+                    <li  class="dropbtn">
+                        <h2><a href="/smart/services.php">Services</a> </h2>
+                        <div class="dropdown">
+                            <!-- <hr class="hr" style="height:2px;border-width:0;color:gray;background-color:gray;
+                            position: absolute;width: 100%;top: 0;left: 0;"> -->
+                            <hr class="hr">
+                            <ul>
+                                <li  class="dropbtn2">
+                                    <h3>Digital Solutions</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Digital Marketing</a></li>
+                                        <li><a href="">Social Media Marketing</a></li>
+                                        <li><a href="">Search Engine Optimization</a></li>
+                                        <li><a href="">Content Writing</a></li>
+                                        <li><a href="">Bulk Email Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="dropbtn2">
+                                    <h3>Web Solutions</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Web Designing</a></li>
+                                        <li><a href="">E-Commerce Website Development</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="dropbtn2">
+                                    <h3>Branding and Design</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Graphic Designing</a></li>
+                                        <li><a href="">Digital Brochures</a></li>
+                                        <li><a href="">Logo Designing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="dropbtn2">
+                                    <h3>Video Marketing</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Video Animation</a></li>
+                                        <li><a href="">Festival Wishes</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="dropbtn2">
+                                    <h3>Mobile Marketing</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Bulk SMS</a></li>
+                                        <li><a href="">Bulk Voice Call</a></li>
+                                        <li><a href="">Bulk WhatsApp Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li  class="dropbtn2">
+                                    <h3>Digital Business Card</h3>
+                                    <div class="dropdown2">
+                                        <hr class="hr">
+                                        <ul>
+                                        <li><a href="">Digital Invitation eCards</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><h2><a href="https://www.behance.net/ismartmedia"  target="_blank">Portfolio</a></h2></li>
+                    <li><h2><a href="/smart/contact.php">Contact</a></h2></li>
+                 </ul>
+            </div>
+            <!-- <div>shop</div> -->
+        </div>
             </nav>
             <div>
                 <a id="topbtn" href="#top"><span>➤</span></a>
@@ -52,16 +156,298 @@
         </div>
 
         <div>
-            <?php require("./icontent.php")?>
+            <div>
+    <section >
+        <h3 class="hd2">INGREDIENTS FOR SUCCESS</h3>
+         <h2 class="hd1" class="hd1">Our Capabilities</h2>
+        <div class="row">
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2" >Social Media Marketing</h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Video Content Marketing </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Search Engine Optimization </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Search Engine Marketing </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Web Designing </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Google Maps </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Content & Copywriting </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scol4">
+                <div class="container">
+                     <h2 class="hd2">Email Marketing </h2>
+                    <div class="scolf"><img src="" alt="1 img"></div>
+                    <div class="scols"><img src="" alt="2 img"></div>
+                    <hr>
+                    <p>"65% Users Watch Video of Businesses they Deal with Highest Retention"</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="conthird">
+            <div class="row ">
+                <div class="w50">
+                    <span>-</span>
+                     <h2 class="hd1">Services we're provided</h2>
+                    <p>lerone peraphghrph</p>
+                    <button>VIWE MORE</button>
+                </div>
+                <div class="w50">
+                    <div class="row box">
+                        <div class="boxs b1">
+                            <img src="" alt="">
+                            <p>Web Design</p>
+                        </div>
+                        <div class="boxs b2">
+                            <img src="" alt="">
+                            <p>Graphic Design</p>
+                        </div>
+                        <div class="boxs b3">
+                            <img src="" alt="">
+                            <p>Logo Designing</p>
+                        </div>
+                        <div class="boxs b4">
+                            <img src="" alt="">
+                            <p>Video Design</p>
+                        </div>
+                        <div class="boxs b5">
+                            <img src="" alt="">
+                            <p>Mobile Marketing</p>
+                        </div>
+                        <div class="boxs b6">
+                            <img src="" alt="">
+                            <p>Bulk SMS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="confour">
+            <div>
+                 <h2 class="hd1">We Offer Digital Marketing For</h2>
+            </div>
+            <div class="carousels" >
+                <?php require("./comp/carousel.php")?>      
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="confive">
+            <div>
+                 <h2 class="hd1">See Whate Clients Say About Us</h2>
+            </div>
+            <div class="reviwe" >
+                <!-- <php require("./comp/reviwe.php")?>       -->
+                <script defer async src='https://cdn.trustindex.io/loader.js?1501294863e181182652a508d1'></script>
+            </div>
+        </div>
+    </section>
+</div>
         </div>
         <div>
-        <?php require("./comp/form.php")?>
-        <!-- <php require("./comp/slideshow.php")?> -->
+        <div class="conform">
+    <div class="formbg">
+        <!-- <div class="form__group fields">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+            <label for="name" class="form__label">Name</label>
+        </div> -->
+        <form action="">
+            <div class="field">
+                <label for=""  class="f-label">YOUR NAME</label>
+                <input type="text"  class="f-input" name="name" id="fname" placeholder="YOUR NAME" require>
+            </div>
+            <div class="field">
+                <label for=""  class="f-label">EMAIL</label>
+                <input type="email" class="f-input" name="email" id="femail" placeholder="EMAIL" require>
+            </div>
+            <div class="field">
+                <label for=""  class="f-label">MOBILE NO.</label>
+                <input type="tel" class="f-input" name="mobile" id="fmobile" placeholder="MOBILE NO." require>
+            </div>
+            <div class="field">
+                <label for=""  class="f-label">MASSAGE</label>
+                <input type="text" class="f-input" name="massage" id="fmassage" placeholder="MASSAGE" require>
+            </div>
+            <!-- <input type="button" value=""> -->
+            <div class="field " id="w100">
+                <button id="formsub" class="formsub" onclick="FormEmaill(); return false">click hear</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function FormEmaill(){
+        console.log("ok form");
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "karmsl0001@gmail.com",
+    Password : "4045B3E426D3AD364F7F8099AF2624771920",
+    To : 'karmsarwara@gmail.com',
+    From : "karmsl0001@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+
+</script>
         </div>
     </main>
 <div class="h100"></div>
     <footer>
-        <?php require("./footer.php")?>
+        <div class="footer">
+    <div class="row" >
+        <div class="f-col">
+            <div class="logoimg"></div>
+            <div>
+                <p><span> I Smart media </span>is the leading & fastest growing Digital Marketing Company in India, 
+                    with having branches in  Bathinda,
+                    & Canada also we have Counselling Centre in Australia & New Zealand. 
+                    <a href="/smart/about.php"> Read More</a>
+                </p>
+            </div>
+        </div>
+        <div class="f-col">
+         <h2 class="hd2">QUICK LINKS</h2>
+         <div class="quicklink">
+            <ul>
+                <li>
+                    <details>
+                        <summary>Our Team</summary>
+                        <p>Our Team info</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Employee</summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Certificates</summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary> Careers   </summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Privacy Policy</summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary> Terms   </summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Return Policy</summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Site Map</summary>
+                        <!-- <p>Our Team info</p> -->
+                    </details>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="f-col3">
+            <div class="f-col3head"><h2  class="hd2">FOLLOW US ON SOICAL MEDIA</h2></div>
+            
+            <div class="f-scol">
+                <h3  class="hd3"> FACEBOOK</h3>
+                <div class="instaimg"></div>
+                <!-- <div><img src="" alt=""></div> -->
+                <button><a href="">LIKE PAGE</a></button>
+            </div>
+            <div class="f-scol">
+                <h3  class="hd3">INSTAGRAM</h3>
+                <!-- <div><img src="" alt=""></div> -->
+                <div class="instaimg"></div>
+                <div id="instafeed"></div>
+                <button><a href="">Viwe on Instagram</a></button>
+            </div>
+
+        </div>
+    </div>
+</div>
         <div class="footerf"><div class="mainani"><div class="animationr">1</div></div>
         <!-- <div class="mainani animimgp"><div class="animationr animimg"></div>2</div> -->
     </div>
